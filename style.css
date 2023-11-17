@@ -1,0 +1,281 @@
+@font-face {
+    font-family: "TTFirs-Bold";
+    src: url("https://db.onlinewebfonts.com/t/315d8cbb2bb3e24f257a56bf3af89fec.eot");
+    src: url("https://db.onlinewebfonts.com/t/315d8cbb2bb3e24f257a56bf3af89fec.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/315d8cbb2bb3e24f257a56bf3af89fec.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/315d8cbb2bb3e24f257a56bf3af89fec.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/315d8cbb2bb3e24f257a56bf3af89fec.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/315d8cbb2bb3e24f257a56bf3af89fec.svg#TTFirs-Bold")format("svg");
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    height: 100%;
+}
+body{
+    
+    box-shadow: 0px 4px 250px 0px #000;
+    margin: 0 auto;
+    height: 100%;
+    font-family: "TTFirs-Bold";
+    font-weight: 400;
+}
+.bg{
+    background: linear-gradient(249deg, #091E0C -0.83%, #0D250F 8.66%, #041105 33.4%, #031004 37.89%, #0F2811 77.58%, #031104 102.11%, #021404 114.61%), #051907;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+.main{
+   /* background: url(./img/bg-parrot.png) no-repeat 102% 165%; */
+    background-size: 35%;
+    color: white;
+    display: flex;
+    height: 100vh;
+}
+.bg-rio img{
+    position: fixed;
+    pointer-events: none;
+    height: 75vh;
+    bottom: -13%;
+    right: -1%;
+}
+.menu{
+    width: 20%;
+    z-index: 1;
+    clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
+    background: #04000C;
+    position: relative;
+}
+.menu__button{
+    background: rgba(255, 255, 255, 0.16);
+    color: #B3B3B3;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    margin: 5%;
+    width: 85%;
+    min-height: 3vw;
+    font-size: 1vw;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    backdrop-filter: blur(20px);
+}
+.menu__button:hover{
+    background: rgba(255, 255, 255, 0.32);
+    transition: background 0.3s, color 0.3s;
+    color: white;
+}
+.img_cat{
+    position: fixed;
+    height: 40%;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+.bg_menu{
+    position: absolute;
+    left: -35%;
+    width: 140%;
+    right: 0;
+    top: 15%;
+    margin: auto;
+    filter: brightness(0.4);
+    z-index: -1;
+}
+.rio-logo{
+    width: 5vw;
+    height: 5vw;
+    position: relative;
+}
+.rio-text{
+    width: 45%;
+    margin: 10vh 4vh;
+}
+.rio-text__h2{
+    font-size: 3vh;
+    opacity: 0.5;
+}
+.rio-text__h1{
+    font-size: 5vh;
+    font-weight: 600;
+    z-index: 2;
+    position: relative;
+}
+.rio-text__h1 span{
+    color: #4DF25C;
+}
+.rio-text__blocks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 5%;
+    max-width: 85%;
+}
+.rio-text__blocks__item{
+    width: 50%;
+    position: relative;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    background: rgba(255, 255, 255, 0.01);
+    box-shadow: 0px 4px 27.6px 0px rgba(77, 242, 92, 0.10) inset, 0px 0px 38.9px 0px rgba(0, 0, 0, 0.10);
+    padding: 4%;
+    backdrop-filter: blur(15px);
+}
+.rio-text__blocks__item::before {
+    display: block;
+    content: '';
+    padding-top: calc(50% * 3 / 3);
+}
+.rio-text__blocks__item p{
+    font-size: 24px;
+}
+.rio-text__blocks__item:first-child{
+    background: url(./img/bg_50.png) no-repeat right bottom;
+    background-size: 30%;
+}
+.rio-text__blocks__item:first-child img{
+    width: 35%;
+    position: absolute;
+    top: 8%;
+}
+.rio-text__blocks__item:last-child img{
+    width: 70%;
+    position: absolute;
+    top: 8%;
+}
+.rio-text__blocks__item p{
+    width: 87%;
+    position: absolute;
+    bottom: 0;
+    font-size: 1.5vw;
+}
+.rio-text__blocks__item:last-child{
+    background: url(./img/bg_225.png) no-repeat right bottom;
+    background-size: 30%;
+}
+.rio-text__button{
+    display: flex;
+    width: 85%;
+    height: 7vh;
+    padding: 14px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    background: #3BA745;
+    border: none;
+    color: #fff;
+    font-size: 2vh;
+    margin-top: 5%;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.rio-text__button:hover{
+    background: #3fcd7b;
+    transition: background 0.3s;
+}
+
+@media (max-width: 1150px) {
+    
+}
+@media (max-width: 800px) {
+    
+}
+@media only screen and (orientation: portrait) {
+    html,body{
+        height: 100%;
+    }
+    .main{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .menu{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 20%;
+        clip-path: polygon(0% 0%, 200% 0%, 0% 100%);
+        -webkit-clip-path: polygon(0% 0%, 200% 0%, 0% 100%);
+    }
+    .bg_menu{
+        right: -90%;
+        width: 78%;
+        top: -1%;
+        position: fixed;
+    }
+    .menu__button{
+        max-width: fit-content;
+        font-size: 14px;
+        height: auto;
+        font-weight: 600;
+    }
+    .img_cat{
+        display: none;
+    }
+    .rio-text{
+        width: 100%;
+        margin: 0;
+        padding: 24px;
+    }
+    .bg-rio{
+        width: 85%;
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+        margin-top: 10%;
+    }
+    .bg-rio:before{
+        display: block;
+        content: '';
+        padding-top: calc(45% * 5 / 3);
+    }
+    .bg-rio:after{
+        display: block;
+        content: '';
+        position: absolute;
+        width: 60%;
+        bottom: 0;
+        right: 23%;
+        border-bottom: 1px solid green;
+        filter: blur(1px);
+        z-index: 1;
+    }
+    .bg-rio img{
+        position: absolute;
+        bottom: auto;
+        left: 4%;
+        top: 17%;
+        width: 75%;
+        height: auto;
+    }
+    .rio-logo{
+        display: none;
+    }
+    .rio-text__h1{
+        font-size: clamp(24px, 6vw, 120px)
+    }
+    .rio-text__h2{
+        font-size: clamp(14px, 4vw, 120px)
+    }
+    .rio-text__blocks,
+    .rio-text__button{
+        max-width: 100%;
+        width: 100%;
+        border-radius: 12px;
+    }
+    .rio-text__blocks__item{
+        border-radius: 16px;
+        padding: 18px;
+    }
+    .rio-text__blocks__item p{
+        font-size: 3vw;
+    }
+    .rio-text__blocks__item:first-child, .rio-text__blocks__item:first-child img{
+        top: 10%;
+    }
+  }
