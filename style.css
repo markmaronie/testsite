@@ -51,7 +51,7 @@ body{
     position: relative;
 }
 .menu__button{
-    background: rgba(255, 255, 255, 0.16);
+    background: #2C2933;
     color: #B3B3B3;
     border: none;
     border-radius: 12px;
@@ -62,12 +62,11 @@ body{
     font-size: 1vw;
     white-space: nowrap;
     cursor: pointer;
-    transition: background 0.3s, color 0.3s;
-    backdrop-filter: blur(20px);
+    transition: 0.3s;
 }
 .menu__button:hover{
-    background: rgba(255, 255, 255, 0.32);
-    transition: background 0.3s, color 0.3s;
+    background: #55525A;
+    transition: 0.3s;
     color: white;
 }
 .img_cat{
@@ -125,9 +124,6 @@ body{
     padding: 4%;
     backdrop-filter: blur(15px);
 }
-.rio-text__blocks__item:first-child{
-    margin-right: 5%;
-}
 
 .rio-text__blocks__item::before {
     display: block;
@@ -140,6 +136,7 @@ body{
 .rio-text__blocks__item:first-child{
     background: url(./img/bg_50.png) no-repeat right bottom;
     background-size: 30%;
+    margin-right: 5%;
 }
 .rio-text__blocks__item:first-child img{
     width: 35%;
