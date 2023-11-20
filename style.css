@@ -113,7 +113,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    grid-gap: 5%;
     max-width: 85%;
 }
 .rio-text__blocks__item{
@@ -126,6 +125,10 @@ body{
     padding: 4%;
     backdrop-filter: blur(15px);
 }
+.rio-text__blocks__item:first-child{
+    margin-right: 5%;
+}
+
 .rio-text__blocks__item::before {
     display: block;
     content: '';
@@ -273,7 +276,7 @@ body{
         padding: 18px;
     }
     .rio-text__blocks__item p{
-        font-size: 3vw;
+        font-size: 3.4vw;
     }
     .rio-text__blocks__item:first-child, .rio-text__blocks__item:first-child img{
         top: 10%;
